@@ -1,0 +1,18 @@
+---
+server:
+  port: 8080
+  contextPath: /MiFinityApp
+---
+datasource:
+  url: jdbc:mysql://localhost:3306/test_mifinity
+  username: root
+  password: 123456
+  driverClassName: com.mysql.jdbc.Driver
+  defaultSchema:
+  maxPoolSize: 20
+  hibernate:
+    hbm2ddl.method: update
+    show_sql: true
+    format_sql: true
+    dialect: org.hibernate.dialect.MySQLDialect
+
